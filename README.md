@@ -1,6 +1,6 @@
 # README
 
-Handlebars colorizer taken from https://github.com/drnic/Handlebars.tmbundle/blob/master/Syntaxes/Handlebars.tmLanguage
+Original Handlebars colorizer taken from https://github.com/nrw/sublime-text-handlebars/blob/master/Handlebars.tmLanguage
 ## This is the README for your extension "handlebars"
 You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
