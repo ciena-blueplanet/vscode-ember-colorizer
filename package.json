@@ -1,0 +1,20 @@
+{
+    "name": "handlebars",
+    "displayName": "Ember-Colorizer",
+    "description": "Colorize Ember syntax and Handlebars",
+    "version": "0.0.1",
+    "publisher": "EricWhite",
+    "engines": {
+        "vscode": "^0.10.10"
+    },
+    "extensionDependencies": [
+        "handlebars"
+    ],
+    "contributes": {
+        "grammars": [{
+            "language": "handlebars",
+            "scopeName": "text.html.handlebars",
+            "path": "./syntaxes/handlebars.tmLanguage"
+        }]
+    }
+}
