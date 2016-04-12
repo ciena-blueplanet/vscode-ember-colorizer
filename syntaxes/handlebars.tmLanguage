@@ -51,7 +51,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
+					<string>handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -61,12 +61,12 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.handlebars</string>
+					<string>data</string>
 				</dict>
                 <key>4</key>
 				<dict>
 					<key>name</key>
-					<string>markup.italic</string>
+					<string>markup.italic, entity.name.function</string>
 				</dict>
                 <key>5</key>
 				<dict>
@@ -76,7 +76,7 @@
                 <key>6</key>
 				<dict>
 					<key>name</key>
-					<string>keyword</string>
+					<string>blockparam</string>
 				</dict>
                 <key>7</key>
 				<dict>
@@ -117,17 +117,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
+					<string>handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function</string>
+					<string>keyword</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.handlebars</string>
+					<string>data</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -137,7 +137,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
+					<string>handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -190,12 +190,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
+					<string>handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function</string>
+					<string>keyword</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -205,7 +205,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
+					<string>handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
