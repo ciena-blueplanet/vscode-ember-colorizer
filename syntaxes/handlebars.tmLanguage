@@ -137,6 +137,10 @@
 				</dict>
                 <dict>
 					<key>include</key>
+					<string>#handlebar_as</string>
+				</dict>
+                <dict>
+					<key>include</key>
 					<string>#handlebar_attributes</string>
 				</dict>
                 <dict>
@@ -198,7 +202,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
+					<string>handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -218,7 +222,7 @@
 		<key>block_helper</key>
 		<dict>
 			<key>begin</key>
-			<string>(\{\{\#)([-a-zA-Z_\./]+)\s*([-a-zA-Z_\./]+)*</string>
+			<string>(\{\{\#)([-a-zA-Z_\./]+)\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -230,11 +234,6 @@
 				<dict>
 					<key>name</key>
 					<string>keyword</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>data</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -258,6 +257,22 @@
 				<dict>
 					<key>include</key>
 					<string>#string_double_quoted</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_as</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_attributes</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_data</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_helper</string>
 				</dict>
 			</array>
 		</dict>
@@ -714,6 +729,10 @@
 					<key>include</key>
 					<string>#comments</string>
 				</dict>
+                <dict>
+					<key>include</key>
+					<string>#component</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#block_helper</string>
@@ -894,6 +913,34 @@
 					<string>#string_single_quoted</string>
 				</dict>
 			</array>
+		</dict>
+        <key>handlebar_as</key>
+		<dict>
+			<key>match</key>
+			<string>\b(as)\s+(\|)([a-zA-z0-9]+)(\|)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>markup.italic, entity.name.function</string>
+				</dict>
+                <key>2</key>
+				<dict>
+					<key>name</key>
+					<string>declaration.tag</string>
+				</dict>
+                <key>3</key>
+				<dict>
+					<key>name</key>
+					<string>blockparam</string>
+				</dict>
+                <key>4</key>
+				<dict>
+					<key>name</key>
+					<string>declaration.tag</string>
+				</dict>
+			</dict>
 		</dict>
         <key>handlebar_attributes</key>
 		<dict>
