@@ -20,7 +20,7 @@
             {
                 "label": "Frost",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Into-the-Dark.tmTheme"
+                "path": "./themes/ember.tmTheme"
             }
         ]
     }
