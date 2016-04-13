@@ -265,6 +265,27 @@
 		<dict>
 			<key>patterns</key>
 			<array>
+                <dict>
+					<key>begin</key>
+					<string>\{\{!--</string>
+					<key>end</key>
+					<string>--\}\}</string>
+					<key>name</key>
+					<string>comment.block.handlebars</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>@\w*</string>
+							<key>name</key>
+							<string>keyword.annotation.handlebars</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+					</array>
+				</dict>
 				<dict>
 					<key>begin</key>
 					<string>\{\{!</string>
@@ -403,7 +424,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.tag.any.html</string>
+					<string>tags.attribute</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -450,7 +471,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(&lt;/?)((?i:address|blockquote|dd|div|dl|dt|fieldset|form|frame|frameset|h1|h2|h3|h4|h5|h6|iframe|noframes|object|ol|p|ul|applet|center|dir|hr|menu|pre)\b)</string>
+					<string>(&lt;\/*)((i:address|blockquote|dd|div|dl|dt|fieldset|form|frame|frameset|h1|h2|h3|h4|h5|h6|iframe|noframes|object|ol|p|ul|applet|center|dir|hr|menu|pre)\b)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -475,7 +496,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.tag.block.any.html</string>
+					<string>tags.attribute</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -522,7 +543,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(&lt;/?)([a-zA-Z0-9:]+)</string>
+					<string>(&lt;/?)([-a-zA-Z0-9:]+)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -547,7 +568,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.tag.other.html</string>
+					<string>tags.attribute</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -618,20 +639,20 @@
 		<key>string_double_quoted</key>
 		<dict>
 			<key>begin</key>
-			<string>"</string>
+			<string>(")</string>
 			<key>beginCaptures</key>
 			<dict>
-				<key>0</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.string.begin.html</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>"</string>
+			<string>(")</string>
 			<key>endCaptures</key>
 			<dict>
-				<key>0</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.string.end.html</string>
@@ -644,6 +665,10 @@
 				<dict>
 					<key>include</key>
 					<string>#comments</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#component</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -818,9 +843,21 @@
 					<key>include</key>
 					<string>#comments</string>
 				</dict>
+                <dict>
+					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#block_helper</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#component</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#component</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -836,6 +873,10 @@
 		<dict>
 			<key>patterns</key>
 			<array>
+                <dict>
+					<key>include</key>
+					<string>#component</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#tag_id_attribute</string>
@@ -917,6 +958,31 @@
 					<string>keyword</string>
 				</dict>
 			</dict>
+            <key>name</key>
+			<string>meta.function.block.start.handlebars.helper</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string_single_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_attributes</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_data</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_helper</string>
+				</dict>
+			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>

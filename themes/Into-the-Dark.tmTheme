@@ -66,7 +66,7 @@
 			<key>name</key>
 			<string>Keyword, Storage, String Link, Regular Expression, Tag Name</string>
 			<key>scope</key>
-			<string>keyword, storage, storage.type, string.other.link, string.regexp, entity.name.tag, declaration.tag, entity.name.tag.css, entity.other.attribute-name.tag</string>
+			<string>keyword, storage, storage.type, string.other.link, string.regexp, entity.name.tag, declaration.tag, entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -77,7 +77,7 @@
 			<key>name</key>
 			<string>Handlebar</string>
 			<key>scope</key>
-			<string>handlebar</string>
+			<string>handlebar, string.quoted.handlebar</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -88,7 +88,7 @@
 			<key>name</key>
 			<string>Component</string>
 			<key>scope</key>
-			<string>component</string>
+			<string>component, string.quoted.component</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -99,7 +99,7 @@
 			<key>name</key>
 			<string>Data</string>
 			<key>scope</key>
-			<string>data</string>
+			<string>data, string.quoted.data</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -169,7 +169,7 @@
 			<key>name</key>
 			<string>String, Symbols, Inherited Class, Markup Heading</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class, markup.heading</string>
+			<string>string.quoted, constant.other.symbol, entity.other.inherited-class, markup.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -355,7 +355,7 @@
 			<key>name</key>
 			<string>ID, Variable</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name.id, variable</string>
+			<string>entity.other.attribute-name.id, variable,  entity.other.attribute-name.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
