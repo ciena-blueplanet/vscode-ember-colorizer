@@ -110,7 +110,7 @@
 			<key>name</key>
 			<string>Action</string>
 			<key>scope</key>
-			<string>action</string>
+			<string>action, constant.key</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -189,17 +189,28 @@
 				<string>#F8F8F2</string>
 			</dict>
 		</dict>
+        <dict>
+			<key>name</key>
+			<string>ID, Variable</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.id, variable,  entity.other.attribute-name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#66BB6A</string>
+			</dict>
+		</dict>
 		<dict>
 			<key>name</key>
 			<string>Function, Special Method, Block Level</string>
 			<key>scope</key>
-			<string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level</string>
+			<string>entity.name.function, support.function, keyword.other.special-method, meta.block-level</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFCA28</string>
+				<string>#28C8FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -351,17 +362,7 @@
 				<string>#967EFB</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>ID, Variable</string>
-			<key>scope</key>
-			<string>entity.other.attribute-name.id, variable,  entity.other.attribute-name.tag</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#66BB6A</string>
-			</dict>
-		</dict>
+		
 		<dict>
 			<key>name</key>
 			<string>CSS Class, Other Var</string>
