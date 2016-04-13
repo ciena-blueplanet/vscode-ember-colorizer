@@ -13,13 +13,14 @@
     ],
     "contributes": {
         "grammars": [{
+            "label": "Handlebars (Ember)",
             "language": "handlebars",
             "scopeName": "text.html.handlebars",
             "path": "./syntaxes/handlebars.tmLanguage"
         }],
         "themes": [
             {
-                "label": "Frost",
+                "label": "Ember",
                 "uiTheme": "vs-dark",
                 "path": "./themes/ember.tmTheme"
             }
