@@ -59,12 +59,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>data</string>
+					<string>entity.other.data, constant.key</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -74,7 +74,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -100,17 +100,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>component</string>
+					<string>support.function.component</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>data</string>
+					<string>entity.other.data, constant.key</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -120,7 +120,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -162,17 +162,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function</string>
+					<string>keyword</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>data</string>
+					<string>entity.other.data, constant.key</string>
 				</dict>
                 <key>4</key>
 				<dict>
@@ -187,7 +187,7 @@
                 <key>6</key>
 				<dict>
 					<key>name</key>
-					<string>blockparam</string>
+					<string>blockparam, object.property</string>
 				</dict>
                 <key>7</key>
 				<dict>
@@ -202,7 +202,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -228,7 +228,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -243,7 +243,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -333,7 +333,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -348,7 +348,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>handlebar</string>
+					<string>keyword.other.handlebar</string>
 				</dict>
 			</dict>
 			<key>name</key>
@@ -933,7 +933,7 @@
                 <key>3</key>
 				<dict>
 					<key>name</key>
-					<string>blockparam</string>
+					<string>blockparam, object.property</string>
 				</dict>
                 <key>4</key>
 				<dict>
@@ -961,7 +961,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>data</string>
+					<string>entity.other.data, constant.key</string>
 				</dict>
 			</dict>
 		</dict>
@@ -974,7 +974,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>data</string>
+					<string>entity.other.data, constant.key</string>
 				</dict>
 			</dict>
 		</dict>

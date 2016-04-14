@@ -88,7 +88,7 @@
 			<key>name</key>
 			<string>Component</string>
 			<key>scope</key>
-			<string>component, string.quoted.component</string>
+			<string>component, string.quoted.component, support.function.component</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
