@@ -99,7 +99,7 @@
 			<key>name</key>
 			<string>Data</string>
 			<key>scope</key>
-			<string>data, string.quoted.data</string>
+			<string>data, string.quoted.data, constant.key</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -110,7 +110,7 @@
 			<key>name</key>
 			<string>Action</string>
 			<key>scope</key>
-			<string>action, constant.key</string>
+			<string>action</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -132,7 +132,7 @@
 			<key>name</key>
 			<string>Block Param</string>
 			<key>scope</key>
-			<string>blockparam</string>
+			<string>blockparam, object.property</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
