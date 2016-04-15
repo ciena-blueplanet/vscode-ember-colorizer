@@ -8,13 +8,22 @@
         "vscode": "^0.10.10"
     },
     "extensionDependencies": [
-        "handlebars"
+        "handlebars",
+        "dzannotti.vscode-babel-coloring"
     ],
     "contributes": {
         "grammars": [{
+            "label": "Handlebars (Ember)",
             "language": "handlebars",
             "scopeName": "text.html.handlebars",
             "path": "./syntaxes/handlebars.tmLanguage"
-        }]
+        }],
+        "themes": [
+            {
+                "label": "Ember",
+                "uiTheme": "vs-dark",
+                "path": "./themes/ember.tmTheme"
+            }
+        ]
     }
 }
