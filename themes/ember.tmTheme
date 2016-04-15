@@ -180,6 +180,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Markup italic</string>
+			<key>scope</key>
+			<string> markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Operator, Misc</string>
 			<key>scope</key>
 			<string>keyword.operator, constant.other.color</string>
