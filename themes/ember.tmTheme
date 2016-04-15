@@ -110,7 +110,7 @@
 			<key>name</key>
 			<string>Action</string>
 			<key>scope</key>
-			<string>action</string>
+			<string>action, support.function.action</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -121,7 +121,7 @@
 			<key>name</key>
 			<string>Action Handler</string>
 			<key>scope</key>
-			<string>actionhandler</string>
+			<string>keyword.other.actionhandler, actionhandler</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

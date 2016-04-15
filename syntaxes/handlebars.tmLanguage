@@ -15,6 +15,10 @@
 	<string>Handlebars (Ember)</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>include</key>
+			<string>#component_action</string>
+		</dict>
         <dict>
 			<key>include</key>
 			<string>#component</string>
@@ -91,6 +95,76 @@
 				</dict>
 			</array>
 		</dict>
+		<key>component_action</key>
+		<dict>
+			<key>begin</key>
+			<string>(\{\{)(action)\s+\'([a-zA-Z\-0-9\s:]+)\'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.handlebar</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.component</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.actionhandler</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\}\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.handlebar</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.block.start.handlebars</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string_single_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_as</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_attributes</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_data</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#handlebar_action_helper</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_helper</string>
+				</dict>
+			</array>
+		</dict>
         <key>component</key>
 		<dict>
 			<key>begin</key>
@@ -139,6 +213,10 @@
 					<key>include</key>
 					<string>#handlebar_as</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
                 <dict>
 					<key>include</key>
 					<string>#handlebar_attributes</string>
@@ -146,6 +224,10 @@
                 <dict>
 					<key>include</key>
 					<string>#handlebar_data</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#handlebar_action_helper</string>
 				</dict>
                 <dict>
 					<key>include</key>
@@ -262,6 +344,10 @@
 					<key>include</key>
 					<string>#handlebar_as</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
                 <dict>
 					<key>include</key>
 					<string>#handlebar_attributes</string>
@@ -269,6 +355,10 @@
                 <dict>
 					<key>include</key>
 					<string>#handlebar_data</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#handlebar_action_helper</string>
 				</dict>
                 <dict>
 					<key>include</key>
@@ -870,9 +960,9 @@
 					<key>include</key>
 					<string>#block_helper</string>
 				</dict>
-                <dict>
+				<dict>
 					<key>include</key>
-					<string>#component</string>
+					<string>#component_action</string>
 				</dict>
                 <dict>
 					<key>include</key>
@@ -888,10 +978,31 @@
 				</dict>
 			</array>
 		</dict>
+		<key>tag_onClick</key>
+		<dict>
+			<key>match</key>
+			<string>(on\-{0,1}[C|c]lick)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.action</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>tag_stuff</key>
 		<dict>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#component_action</string>
+				</dict>
                 <dict>
 					<key>include</key>
 					<string>#component</string>
@@ -978,6 +1089,72 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>handlebar_action_helper</key>
+		<dict>
+			<key>begin</key>
+			<string>(\()(action)\s+\'([a-zA-Z\-0-9\s:]+)\'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+                <key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.actionhandler</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+			</dict>
+            <key>name</key>
+			<string>meta.function.block.start.handlebars.helper</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#string_single_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_double_quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_attributes</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_data</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#handlebar_action_helper</string>
+				</dict>
+                <dict>
+					<key>include</key>
+					<string>#handlebar_helper</string>
+				</dict>
+			</array>
+		</dict>
         <key>handlebar_helper</key>
 		<dict>
 			<key>begin</key>
@@ -1017,6 +1194,10 @@
 					<key>include</key>
 					<string>#string_double_quoted</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_onClick</string>
+				</dict>
                 <dict>
 					<key>include</key>
 					<string>#handlebar_attributes</string>
@@ -1026,6 +1207,10 @@
 					<string>#handlebar_data</string>
 				</dict>
                 <dict>
+					<key>include</key>
+					<string>#handlebar_action_helper</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>#handlebar_helper</string>
 				</dict>
