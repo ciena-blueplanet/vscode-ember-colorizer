@@ -981,13 +981,18 @@
 		<key>tag_onClick</key>
 		<dict>
 			<key>match</key>
-			<string>(on\-{0,1}[C|c]lick)</string>
+			<string>(on\-{0,1}[C|c]lick)\=([A-Za-z]*)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>support.function.action</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.actionhandler</string>
 				</dict>
 			</dict>
 		</dict>
