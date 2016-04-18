@@ -1,7 +1,7 @@
 {
-    "name": "handlebars",
-    "displayName": "Ember-Colorizer",
-    "description": "Colorize Ember syntax and Handlebars",
+    "name": "vsc-ember-frost",
+    "displayName": "Ember Colorizer and Theme",
+    "description": "Colorize Ember syntax and Handlebars. Along with a theme made specifcally for the colorizer",
     "version": "0.0.1",
     "publisher": "EricWhite",
     "engines": {
@@ -20,7 +20,7 @@
         }],
         "themes": [
             {
-                "label": "Ember",
+                "label": "Ember Frost",
                 "uiTheme": "vs-dark",
                 "path": "./themes/ember.tmTheme"
             }
