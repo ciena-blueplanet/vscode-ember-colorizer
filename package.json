@@ -3,7 +3,7 @@
     "displayName": "Ember Colorizer and Theme",
     "description": "Colorize Ember syntax and Handlebars. Along with a theme made specifcally for the colorizer",
     "version": "0.0.1",
-    "publisher": "Eric White",
+    "publisher": "ciena-blueplanet",
     "homepage": "https://github.com/ciena-blueplanet/vscode-ember-colorizer",
     "engines": {
         "vscode": "^0.10.10"
