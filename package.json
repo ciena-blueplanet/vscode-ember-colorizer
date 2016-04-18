@@ -1,9 +1,10 @@
 {
-    "name": "handlebars",
-    "displayName": "Ember-Colorizer",
-    "description": "Colorize Ember syntax and Handlebars",
+    "name": "vsc-ember-frost",
+    "displayName": "Ember Colorizer and Theme",
+    "description": "Colorize Ember syntax and Handlebars. Along with a theme made specifcally for the colorizer",
     "version": "0.0.1",
-    "publisher": "EricWhite",
+    "publisher": "Eric White",
+    "homepage": "https://github.com/ciena-blueplanet/vscode-ember-colorizer",
     "engines": {
         "vscode": "^0.10.10"
     },
@@ -20,7 +21,7 @@
         }],
         "themes": [
             {
-                "label": "Ember",
+                "label": "Ember Frost",
                 "uiTheme": "vs-dark",
                 "path": "./themes/ember.tmTheme"
             }
