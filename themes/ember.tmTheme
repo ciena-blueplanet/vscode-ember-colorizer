@@ -27,6 +27,17 @@
 				<string>#373B41</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Handlebar</string>
+			<key>scope</key>
+			<string>handlebar, meta.tag.other.handlebar ,keyword.other.handlebar, string.quoted.handlebar</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#1E88E5</string>
+			</dict>
+		</dict>
          <dict>
 			<key>name</key>
 			<string>HTML Tags</string>
@@ -71,17 +82,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFCA28</string>
-			</dict>
-		</dict>
-        <dict>
-			<key>name</key>
-			<string>Handlebar</string>
-			<key>scope</key>
-			<string>handlebar, string.quoted.handlebar</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#1E88E5</string>
 			</dict>
 		</dict>
          <dict>
